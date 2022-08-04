@@ -4527,7 +4527,6 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
-  align-items: center;
   justify-content: center;
 }
 
@@ -11338,5 +11337,17 @@ body.sidebar-toggled footer.sticky-footer {
   'wght' 300,
   'GRAD' 0,
   'opsz' 40
+}
+
+#registerTable th{
+  padding: 10px 50px 10px 50px;
+  color:var(--primary);
+  background-color: #f8f9fc;
+  border-color: #e3e6f0;
+}
+
+#registerTable td{
+  padding: px 50px 10px 50px;
+  text-align:left;
 }
 
