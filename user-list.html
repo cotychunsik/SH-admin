@@ -53,7 +53,7 @@
             <!-- 관리자메뉴 -->
             <hr class="sidebar-divider">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" text-aligh="center">
+                    <a class="nav-link" href="user-list.html" text-aligh="center">
                         <span>회원관리</span><span class="material-symbols-outlined" style="float:right;padding:6px">
                             arrow_forward_ios
                             </span>
@@ -63,7 +63,7 @@
            
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="stampManage.html">
                     <span>스탬프 내역관리</span><span class="material-symbols-outlined" style="float:right;padding:6px" >
                         arrow_forward_ios
                         </span>
@@ -73,7 +73,7 @@
             
 
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="townManage.html">
                     <span>어촌계 관리</span><span class="material-symbols-outlined" style="float:right;padding:6px" >
                         arrow_forward_ios
                         </span>
@@ -82,7 +82,7 @@
             </li>
 
             <li class="nav-item" >
-                <a class="nav-link" href="#" >
+                <a class="nav-link" href="SHManage.html" >
                     <span>수협중앙회 관리</span><span class="material-symbols-outlined" style="float:right;padding:6px" >
                         arrow_forward_ios
                         </span>
@@ -90,7 +90,7 @@
                 
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="#" >
+                <a class="nav-link" href="pdfManage.html" >
                     <span>어촌힐링여행 PDF관리</span><span class="material-symbols-outlined" style="float:right;padding:6px" >
                         arrow_forward_ios
                         </span>
@@ -122,20 +122,22 @@
                                                 <div class="user-search" style="float:right">
                                                     <div class="row">
                                                       <div class="input-group">
-                                                        <div class="input-group-btn">
-                                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">회원명 <span class="caret"></span></button>
-                                                          <ul class="dropdown-menu" role="menu">
-                                                            <li><a href="#">회원명</a></li>
-                                                            <li><a href="#">이메일</a></li>
-                                                            </ul>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              회원명
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">회원명</a>
+                                                              <a class="dropdown-item" href="#">이메일</a>
                                                             </div>
+                                                          </div>
                                                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control"  placeholder="검색어를 입력해주세요."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button" style="height:38px">
-                                    <span class="material-symbols-outlined" >
+                                    <span class="material-symbols-outlined">
                                         search
                                         </span>
                                 </button>
@@ -170,7 +172,7 @@
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>0</td>
                                                             </tr>
