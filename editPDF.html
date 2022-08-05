@@ -102,10 +102,28 @@
                                                 <div class="border 1px" style="padding:40px;">
                                                     <img src="img/file.svg">
                                                     <h4 style="margin-top:10px">경인바다_강화도.pdf</h4>
-                                                    <a class="btn btn-danger" href="#" role="button" style="width:100px; margin:0 20px;">파일 삭제</a>  
+                                                    <a class="btn btn-danger" href="#" role="button" style="width:100px; margin:0 20px;" data-toggle="modal" data-target="#exampleModalCenter">파일 삭제</a>  
                                                 </div>
                                                 </div>
-
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLongTitle">삭제</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body text-center">
+                                                          <span>파일을 삭제하시겠습니까?</span>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                                                          <button type="button" class="btn btn-danger">삭제</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                                 
                                                
                                                 
@@ -116,7 +134,32 @@
                 </div>
                 <div class="btns">
                 <a class="btn btn-secondary" href="#" role="button" style="width:100px; margin:0 20px;" >취소하기</a>
-                <a class="btn btn-primary" href="#" role="button" style="width:100px; margin:0 20px;">수정하기</a>  
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2" style="width:100px; margin:0 20px;">
+                    수정하기
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">수정완료</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          게시글이 수정되었습니다.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                          <button type="button" class="btn btn-primary">확인</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                          
+                <!-- <a class="btn btn-primary" href="#" role="button" style="width:100px; margin:0 20px;">수정하기</a>   -->
                         </div>
                         </div>
 
