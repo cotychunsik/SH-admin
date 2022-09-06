@@ -27,12 +27,12 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-3 static-top shadow" style="width:100%; height:80px;">
                     <div class="topLogo" style="border-right:1px solid white;">
-                        <img src="img/symbol.png" style="width:50px; margin:0 15px 0 30px;">
-                        <span style="color:white; font-size: 18px; font-weight: 500; margin-right:30px; vertical-align: middle;" >어촌여행 APP 관리</span> 
+                        <a href="index.html" style="text-decoration:none;"> <img src="img/symbol.png" style="width:50px; margin:0 15px 0 30px;">
+                        <span style="color:white; font-size: 18px; font-weight: 500; margin-right:30px; vertical-align: middle;" >어촌여행 APP 관리</span> </a>
                     </div>
                     <div class="navMenu">
                         <div class="menuIcx" style="color:white;">
-                            <a class="nav_link" href="user-list.html" style="color:inherit; text-decoration: none;">
+                            <a class="nav_link" href="index.html" style="color:inherit; text-decoration: none;">
                         <span class="navText" style="font-size:16px; justify-content: center;">회원관리</span>
                         <img class="expand_more_icx" src="img/expand_more.svg">
                         </a>
@@ -52,7 +52,7 @@
 
                                             <div class="menuIcx" style="color:white; justify-content: center;">
                                                 <a class="nav_link" href="SHManage.html" style="color:inherit; text-decoration: none;">
-                                                <span style="font-size:16px; justify-content: center;">수협중앙회 관리</span>
+                                        <span style="font-size:16px; justify-content: center;">수협상호금융 영업점 관리</span>
                                                 <img class="expand_more_icx" src="img/expand_more.svg">                        </a>
                                                     </div>
 
@@ -126,6 +126,8 @@
                                                                 <th>이름</th>
                                                                 <th>가입일</th>
                                                                 <th>누적스탬프</th>
+                                                                <th>회원삭제</th>
+
                                                             </tr>
                                                         </thead>
                                                        
@@ -134,161 +136,201 @@
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
+                                                                <td class="user-detail"><a href="user-stamp.html">홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>0</td>
+                                                                <td><input class="btn btn-primary" type="button" value="삭제" data-toggle="modal" data-target="#exampleModalCenter"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>페이스북</td>
+                                                                <td class="user-detail"><a href="user-stamp.html">홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>카카오</td>
+                                                                <td class="user-detail"><a href="user-stamp.html">홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>2</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>구글</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>2</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>페이스북</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>네이버</td>
                                                                 <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>0</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>페이스북</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>카카오</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
-                                                                <td>2</td>
+                                                                <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>2</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>페이스북</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>네이버</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>0</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>구글</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>2</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>구글</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>1134</td>
+                                                                <td>abcd@sample.com</td>
+                                                                <td>구글</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
+                                                                <td>2022.07.14</td>
+                                                                <td>2</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>카카오</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>구글</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>구글</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>2</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>구글</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>구글</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>2</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>1134</td>
-                                                                <td>abcd@sample.com</td>
-                                                                <td>카카오</td>
-                                                                <td>홍길동</td>
-                                                                <td>2022.07.14</td>
-                                                                <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>네이버</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>네이버</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>5</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>페이스북</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>1</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>카카오</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>4</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>카카오</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                             <tr>
                                                                 <td>1134</td>
                                                                 <td>abcd@sample.com</td>
                                                                 <td>구글</td>
-                                                                <td>홍길동</td>
+                                                                <td class="user-detail"><a href=user-stamp.html>홍길동</a></td>
                                                                 <td>2022.07.14</td>
                                                                 <td>3</td>
+                                                                <td><button class="btn btn-primary" id="delete">삭제</button></td>
+
                                                             </tr>
                                                            
                                                         </tbody>
@@ -317,7 +359,29 @@
                                                 </div>
                                             </div>
                                         </div>
-                                                
+                                                 <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">삭제</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <span>해당 회원을 삭제하시겠습니까? <br/>삭제된 데이터는 복구할 수 없습니다.</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-danger">삭제</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

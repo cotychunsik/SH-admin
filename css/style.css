@@ -11351,3 +11351,6 @@ body.sidebar-toggled footer.sticky-footer {
   text-align:left;
 }
 
+#upload_icx {
+  cursor: pointer;
+}
