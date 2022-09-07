@@ -4786,6 +4786,7 @@ input[type="button"].btn-block {
 
 .pagination {
   position: relative;
+  justify-content: center;
   line-height: 1rem;
   margin: 0 40% 0 40%;
   display: flex;
